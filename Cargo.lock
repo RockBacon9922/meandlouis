@@ -10,6 +10,7 @@ dependencies = [
  "bytemuck",
  "imagine",
  "ogl33",
+ "ultraviolet",
 ]
 
 [[package]]
@@ -77,4 +78,32 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "824cf1a81ae16877f90e9cdc4dcb51c833a0f8da6a7ca36a782a3a970fcd3e32"
 dependencies = [
  "libc",
+]
+
+[[package]]
+name = "safe_arch"
+version = "0.5.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c1ff3d6d9696af502cc3110dacce942840fb06ff4514cad92236ecc455f2ce05"
+dependencies = [
+ "bytemuck",
+]
+
+[[package]]
+name = "ultraviolet"
+version = "0.7.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c6650a58414f856056ccc651abd3b9d80c384206250c3a621224497503a0f9f2"
+dependencies = [
+ "wide",
+]
+
+[[package]]
+name = "wide"
+version = "0.5.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "80b27c76ecc22bd81fe681d9c9eac81e002d7b7048105ee4608f57c4e92e9211"
+dependencies = [
+ "bytemuck",
+ "safe_arch",
 ]
